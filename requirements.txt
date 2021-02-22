@@ -1,0 +1,7 @@
+numpy==1.19.5
+matplotlib==3.3.4
+tensorflow==2.4.1
+PyAutoGUI==0.9.52
+unix==1.0
+PyMouse==1.0
+PyUserInput==0.1.11
