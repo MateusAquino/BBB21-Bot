@@ -8,7 +8,7 @@ Dito isto, configurei uma base de **270 arquivos** classificados manualmente (po
 
 O projeto foi desenvolvido e testado no Linux (Arch Linux x86_64).
 ## ⚠️ Aviso
-O algoritmo faz o recorte manual utilizando posições que estão **hardcoded**.  
+O algoritmo faz o recorte manual utilizando posições que estão **hardcoded** de acordo com o meu monitor/setup.  
 Por ser um estudo e não uma aplicação para uso geral, não pretendo automatizar esse processo, caso queira testar esse algoritmo você terá que alterar manualmente nas variáveis iniciais em `bbb.py` (procure no arquivo por `log pos. mouse` e `log cor pixel`).
 
 ## 🚀 Instalação
