@@ -2,7 +2,7 @@
 O **BBB21 Bot** faz parte de um estudo sobre segurança da informação, processamento de imagem e redes neurais.  
 Desenvolvido para fins de estudo. Sem nenhuma intenção de prejudicar o programa, a emissora ou qualquer participante em específico.  
 
-Até a edição anterior do Big Brother Brasil, o sistema de captcha implementado era de simples imagens 1:4 (1/5, 25%) com hashcash pra evitar o não cumprimento do captcha pelas requisições HTTP, porém recentemente eles atualizaram para o hCaptcha (uma versão alternativa ao reCAPTCHA), que foi configurado para o usuário identificar apenas fotos de bicicletas e barcos.  
+Até a edição anterior do Big Brother Brasil, o [sistema de captcha implementado](https://www.youtube.com/watch?v=ll8ewMMFsPg) era de simples imagens 1:4 (1/5, 25%) com hashcash pra evitar o não cumprimento do captcha pelas requisições HTTP, porém recentemente eles atualizaram para o hCaptcha (uma versão alternativa ao reCAPTCHA), que foi configurado para o usuário identificar apenas fotos de bicicletas e barcos.  
 
 Dito isto, configurei uma base de **828 arquivos** classificados manualmente (poderiam ser mais, porém foi o suficiente para mim) para serem trabalhados no Tensorflow (Keras).  
 
