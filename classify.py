@@ -12,8 +12,9 @@ from tensorflow.keras.models import Sequential
 
 train = False # ligue para treinar novos dados (inseridos no ./data/)
 plot = True # ligue com o train para mostrar os resultados do treino
+t_seed = 77777 # mude caso a taxa esteja muito baixa mesmo com os dados certos (linha amarela)
 
-epochs = 12
+epochs = 15
 batch_size = 25
 num_classes = 3
 size = (120, 120)
@@ -25,18 +26,18 @@ print('Tamanho do dataset: %d' % image_count)
 # Dataset - Trainar
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
 	data_dir,
-	validation_split=0.15,
+	validation_split=0.2,
 	subset='training',
-	seed=7777,
+	seed=t_seed,
 	image_size=size,
 	batch_size=batch_size)
 
 # Dataset - Validar
 val_ds = tf.keras.preprocessing.image_dataset_from_directory(
 	data_dir,
-	validation_split=0.15,
+	validation_split=0.2,
 	subset='validation',
-	seed=7777,
+	seed=t_seed,
 	image_size=size,
 	batch_size=batch_size)
 
@@ -63,7 +64,7 @@ else:
   		layers.Conv2D(64, (3, 3), padding='same', activation='relu'),
   		layers.MaxPooling2D(),
 
-  		layers.Dropout(0.05),
+  		layers.Dropout(0.1),
   		layers.Flatten(),
 		layers.Dense(64, activation='relu'),
   		layers.Dense(num_classes, activation='softsign')

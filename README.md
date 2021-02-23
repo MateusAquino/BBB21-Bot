@@ -4,7 +4,7 @@ Desenvolvido para fins de estudo. Sem nenhuma intenção de prejudicar o program
 
 Até a edição anterior do Big Brother Brasil, o sistema de captcha implementado era de simples imagens 1:4 (1/5, 25%) com hashcash pra evitar o não cumprimento do captcha pelas requisições HTTP, porém recentemente eles atualizaram para o hCaptcha (uma versão alternativa ao reCAPTCHA), que foi configurado para o usuário identificar apenas fotos de bicicletas e barcos.  
 
-Dito isto, configurei uma base de **270 arquivos** classificados manualmente (poderiam ser mais, porém foi o suficiente para mim) para serem trabalhados no Tensorflow (Keras).  
+Dito isto, configurei uma base de **828 arquivos** classificados manualmente (poderiam ser mais, porém foi o suficiente para mim) para serem trabalhados no Tensorflow (Keras).  
 
 O projeto foi desenvolvido e testado no Linux (Arch Linux x86_64).
 ## ⚠️ Aviso
@@ -13,7 +13,7 @@ Por ser um estudo e não uma aplicação para uso geral, não pretendo automatiz
 
 ## 🚀 Instalação
 O Tensorflow **não** está disponível para versões recentes do Python, recomendo que instale a versão `3.8.6`.  
-Em seguida execute:
+Clone o repositório e execute em seguida:
 
     pip install -r requirements.txt
 

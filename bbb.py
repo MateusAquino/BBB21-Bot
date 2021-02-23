@@ -35,7 +35,7 @@ m = 10  # margem entre os blocos
 time.sleep(1)
 
 def scrollDownWait():
-	timeout = 1.1 + random()
+	timeout = 1 + random() * (2/3)
 	time.sleep(timeout/2)
 	pyautogui.scroll(-20)
 	time.sleep(timeout/2)
@@ -63,12 +63,12 @@ def captchaSolve(solve_for):
 			classified = classify(file) # classificar bloco pela rede neural
 			if not keepImages: os.remove(file)
 
-			if solve_for == classified[0]:
+			if solve_for == classified[0] and classified[1] > 55:
 				o = (int) (random()*80-40) # rnd offset
 				block_x = captcha_block[0] + crop_x + o
 				block_y = captcha_block[1] + crop_y + o
 				mouse.click(block_x, block_y) # clica no bloco
-				time.sleep(random())
+				time.sleep(random() * (2/3))
 	mouse.click(next_button[0], next_button[1]) # clica pra terminar
 
 
@@ -89,7 +89,7 @@ while True:
 	c_type = captchaType()
 	while c_type is not False:
 		captchaSolve(c_type)
-		time.sleep(1+random()*2)
+		time.sleep(0.7+random()*1)
 		c_type = captchaType()
 
 	scrollDownWait()
